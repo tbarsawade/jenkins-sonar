@@ -4,7 +4,7 @@ pipeline {
 	string(
 		name: "BRANCH_NAME",
 		description: "Branch name that you want to build",
-		defaultValue: "develop"
+		defaultValue: "tiku"
 		)
     choice(
 		name: "WORKFLOW",
@@ -45,7 +45,7 @@ pipeline {
         stage('Upload')
         {
             when{
-                expression{params.BRANCH_NAME == "develop"}
+                expression{params.BRANCH_NAME == "tiku"}
             }
             steps
             {
@@ -62,7 +62,7 @@ pipeline {
         stage('Download artefact')
         {
             when{
-                expression{params.BRANCH_NAME == "develop"}
+                expression{params.BRANCH_NAME == "tiku"}
             }
             steps
             {
