@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+	agent {
+	  node {
+        label 'windows'
+    }
+}
     parameters {
 	string(
 		name: "BRANCH_NAME",
