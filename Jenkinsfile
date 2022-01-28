@@ -1,7 +1,7 @@
 pipeline {
     agent {
     node {
-        label 'Built-InNode'
+        label 'windows'
     }
 }
     parameters {
