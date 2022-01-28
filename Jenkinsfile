@@ -33,7 +33,7 @@ pipeline {
         }
         stage('Zip artifact') {
             when{
-                expression{params.BRANCH_NAME == "develop"}
+                expression{params.BRANCH_NAME == "tiku"}
             }
             steps {
                 echo "==========Zipping========="
