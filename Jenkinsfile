@@ -21,7 +21,7 @@ pipeline {
             steps {
                 echo "==========Building========="
                 bat '''
-                msbuild /property:Configuration=Release Myend_sampleApp\\WebApplication1\\WebApplication1.sln
+                C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\MSBuild\\Current\\Bin\\msbuild /property:Configuration=Release Myend_sampleApp\\WebApplication1\\WebApplication1.sln
                 '''
             }
         }
@@ -102,3 +102,4 @@ pipeline {
 
     }
 }
+
