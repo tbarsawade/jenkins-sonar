@@ -1,0 +1,86 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "This template will create the S3 bucket that will host our webpage by using cloudfront",
+    "Resources": {
+        "S3Bucket": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+                "AccessControl": "PublicRead",
+                "BucketName": "privatetikubucket",
+                "Tags": [
+                    {
+                        "Key": "description",
+                        "Value": "Private files"
+                    }
+                ]
+            }
+        },
+        "CloudFrontOriginIdentity": {
+            "Type": "AWS::CloudFront::CloudFrontOriginAccessIdentity",
+            "Properties": {
+                "CloudFrontOriginAccessIdentityConfig": {
+                "Comment": "origin identity"
+                 }
+            }
+        },
+        "BucketPolicy": {
+            "Type": "AWS::S3::BucketPolicy",
+            "Properties": {
+                "Bucket": "privatetikubucket",
+                "PolicyDocument": {
+                    "Version": "2012-10-17",
+                    "Statement": [
+                        {
+                            "Effect": "Allow",
+                            "Principal": "*",
+                            "Action": "s3:GetObject",
+                            "Resource": "arn:aws:s3:::privatetikubucket/*"
+                        }
+                    ]
+                }
+            }
+        },
+        "cloudfrontDistribution": {
+            "Type": "AWS::CloudFront::Distribution",
+            "Properties": {
+                "DistributionConfig": {
+                    "Origins": [
+                        {
+                            "DomainName": "privatetikubucket.s3.us-east-2.amazonaws.com",
+                            "Id": "S3-privatetikubucket",
+                            "S3OriginConfig": {
+                                "OriginAccessIdentity": {
+                                    "Fn::Join": ["", ["origin-access-identity/cloudfront/", {"Ref": "CloudFrontOriginIdentity"}]]
+                                }
+
+                            }
+                        }
+                    ],
+                    "DefaultRootObject": "index.html",
+                    "Enabled": "true",
+                    "HttpVersion": "http2",
+                    "Comment": "This is created",
+                    "DefaultCacheBehavior": {
+                        "AllowedMethods": [
+                            "GET",
+                            "HEAD",
+                            "OPTIONS"
+                        ],
+                        "TargetOriginId": "S3-privatetikubucket",
+                        "ForwardedValues": {
+                            "QueryString": "false",
+                            "Cookies": {
+                                "Forward": "none"
+                            }
+                        },
+                        "ViewerProtocolPolicy": "redirect-to-https"
+                    },
+                    "ViewerCertificate": {
+                        "CloudFrontDefaultCertificate": "true"
+                        
+                    }
+                }
+            }
+        }
+    }
+}

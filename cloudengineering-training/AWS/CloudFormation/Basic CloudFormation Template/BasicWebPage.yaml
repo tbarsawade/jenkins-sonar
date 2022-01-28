@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: This template will create the S3 bucket that will host our angular application
+Resources:
+  TikuCFBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: tikucloudformationbucket!Sub angular-devops-${EnvironmentName}
+      Tags:
+        - Key: site
+          Value: CF
+        - Key: Company
+          Value: GoKloud
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html

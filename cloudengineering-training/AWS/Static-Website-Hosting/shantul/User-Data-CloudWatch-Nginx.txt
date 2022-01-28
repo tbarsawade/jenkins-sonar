@@ -1,0 +1,17 @@
+#!/bin/bash
+amazon-linux-extras enable nginx1
+amazon-linux-extras install collectd
+yum clean metadata
+yum -y install nginx amazon-cloudwatch-agent
+aws s3 cp s3://jrastos/index.html /home/ec2-user 
+mv /home/ec2-user/index.html /usr/share/nginx/html
+aws s3 cp s3://jrastos/nginx.conf /home/ec2-user
+mv /home/ec2-user/nginx.conf /etc/nginx/
+#mkdir -p /etc/ssl/private
+#openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx.key -out /etc/ssl/certs/nginx.crt -subj "/C=/ST=/L=/O=/CN=example.com"
+systemctl start nginx
+systemctl enable nginx
+aws s3 cp s3://jrastos/config.json /home/ec2-user 
+mv /home/ec2-user/config.json /opt/aws/amazon-cloudwatch-agent/bin/
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json
+yum update -y

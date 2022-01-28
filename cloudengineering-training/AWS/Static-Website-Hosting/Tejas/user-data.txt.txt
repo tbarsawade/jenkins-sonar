@@ -1,0 +1,34 @@
+Content-Type: multipart/mixed; boundary="===============5189065377222898407=="
+MIME-Version: 1.0
+
+--===============5189065377222898407==
+Content-Type: text/cloud-config; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="cloud-config.txt"
+
+#cloud-config
+repo_upgrade: none
+repo_releasever: 2.0
+cloud_final_modules:
+ - [scripts-user, always]
+
+--===============5189065377222898407==
+Content-Type: text/x-shellscript; charset="us-ascii"
+MIME-Version: 1.0
+
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="user-data.txt"
+
+#!/bin/bash
+sudo apt-get update	
+sudo apt install nginx -y	
+sudo systemctl start nginx
+sudo systemctl enable nginx
+sudo rm nginx.conf
+sudo apt install awscli -y
+aws s3 cp s3://<your_bucket_name>/index.html
+aws s3 cp s3://<your_bucket_name>/nginx.conf /etc/nginx
+sudo systemctl restart nginx
+sudo service awslogs restart
+

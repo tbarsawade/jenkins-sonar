@@ -1,0 +1,10 @@
+#!/bin/bash
+amazon-linux-extras enable nginx1
+yum clean metadata
+aws s3 cp s3://jrastos/index.html /home/ec2-user 
+mv /home/ec2-user/index.html /usr/share/nginx/html
+aws s3 cp s3://jrastos/nginx.conf /home/ec2-user
+mv /home/ec2-user/nginx.conf /etc/nginx/
+systemctl start nginx
+systemctl enable nginx
+yum update -y
