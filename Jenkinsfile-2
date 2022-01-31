@@ -42,14 +42,9 @@ pipeline {
                 '''
             }
         }
-	options {
-               buildDiscarder(logRotator(numToKeepStr: '5'))
-        }
-        stage('Scan') {
+        stage('Clean') {
           steps {
-             withSonarQubeEnv(installationName: 'sonar-6') { 
-               bat 'mvn clean package sonar:sonar'
-        }
+             bat "msbuild.exe ${workspace}\\C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\msbuild\\Myend_sampleApp\\WebApplication1\\WebApplication1.sln" /nologo /nr:false /p:platform=\"x64\" /p:configuration=\"release\" /t:clean"
       }
     } 
 
