@@ -43,8 +43,8 @@ pipeline {
             }
         }
 	options {
-    buildDiscarder(logRotator(numToKeepStr: '5'))
-  }
+               buildDiscarder(logRotator(numToKeepStr: '5'))
+        }
         stage('Scan') {
           steps {
              withSonarQubeEnv(installationName: 'sonar-6') { 
