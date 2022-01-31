@@ -1,0 +1,16 @@
+node {
+	stage 'Checkout'
+		checkout scm
+
+	stage 'Build'
+                bat '''
+                \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\MSBuild\\Current\\Bin\\msbuild\" /property:Configuration=Release Myend_sampleApp\\WebApplication1\\WebApplication1.sln
+                '''
+  stage('Scan') {
+      steps {
+        withSonarQubeEnv(installationName: 'sonar-6') { 
+          bat 'mvn clean package sonar:sonar'
+        }
+      }
+    }
+}
