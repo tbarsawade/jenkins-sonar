@@ -7,6 +7,16 @@ node {
                 \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\MSBuild\\Current\\Bin\\msbuild\" /property:Configuration=Release Myend_sampleApp\\WebApplication1\\WebApplication1.sln
                 '''
 		
+	stage 'Zip artifact' {
+            when{
+                expression{params.BRANCH_NAME == "develop"}
+            }
+            steps {
+                echo "==========Zipping========="
+                bat '''
+                tar -czvf bin.zip Myend_sampleApp\\WebApplication1\\bin
+                '''
+            }
 	stage 'Archive'
 		archive 'C:/ProgramData/Jenkins/.jenkins/workspace/1229/bin/Release/**'
 
