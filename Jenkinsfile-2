@@ -1,0 +1,54 @@
+pipeline {
+	agent any
+    parameters {
+	string(
+		name: "BRANCH_NAME",
+		description: "Branch name that you want to build",
+		defaultValue: "develop"
+		)
+    choice(
+		name: "WORKFLOW",
+		description: "Select the environment you want to deploy your code on",
+		choices : ["Build","Deploy"]
+		)
+    string(
+        name: 'CommitID', defaultValue: 'latest', 
+        description: 'commit id refernce used for building package'
+        )
+	}
+    stages {
+        stage('build') {
+            steps {
+                echo "==========Building========="
+                bat '''
+                \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\MSBuild\\Current\\Bin\\msbuild\" /property:Configuration=Release Myend_sampleApp\\WebApplication1\\WebApplication1.sln
+                '''
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "==========Testing========="
+                echo "No test cases to execute"
+            }
+        }
+        stage('Zip artifact') {
+            when{
+                expression{params.BRANCH_NAME == "develop"}
+            }
+            steps {
+                echo "==========Zipping========="
+                bat '''
+                tar -czvf bin.zip Myend_sampleApp\\WebApplication1\\bin
+                '''
+            }
+        }
+        stage('Scan') {
+          steps {
+             withSonarQubeEnv(installationName: 'sonar-6') { 
+               bat 'mvn clean package sonar:sonar'
+        }
+      }
+    } 
+
+    }
+}
