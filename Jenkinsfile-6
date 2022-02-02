@@ -7,9 +7,12 @@ node {
                 \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\MSBuild\\Current\\Bin\\msbuild\" /property:Configuration=Release Myend_sampleApp\\WebApplication1\\WebApplication1.sln
                 '''
   stage('SonarQube Analysis') {
-    def scannerHome = tool 'SonarScanner';
+    def msbuildHome = tool 'Default MSBuild'
+    def scannerHome = tool 'SonarScanner for MSBuild'
     withSonarQubeEnv() {
-      bat "${scannerHome}/bin/sonar-scanner"
+      bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" begin /k:\"tiku\""
+      bat "\"${msbuildHome}\\MSBuild.exe\" /t:Rebuild"
+      bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" end"
     }
   }
 }
