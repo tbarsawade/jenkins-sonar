@@ -8,7 +8,7 @@ node {
                 '''
   stage('SonarQube Analysis') {
     def msbuildHome = tool 'MSBuild'
-    def scannerHome = tool 'MSBuild'
+    def scannerHome = tool 'SonarScanner'
     withSonarQubeEnv() {
       bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" begin /k:\"tiku\""
       bat "\"${msbuildHome}\\MSBuild.exe\" /t:Rebuild"
