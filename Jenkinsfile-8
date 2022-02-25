@@ -7,7 +7,7 @@ node {
     def msbuildHome = tool 'msbuild'
     def scannerHome = tool 'SonarScanner'
     withSonarQubeEnv() {
-      bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" begin /k:\"friday\""
+      bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" begin /k:\"myndsonar\""
       bat "\"${msbuildHome}\" /property:Configuration=Release Myend_sampleApp\\WebApplication1\\WebApplication1.sln /t:Rebuild"
       bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" end"
     }
