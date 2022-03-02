@@ -5,7 +5,7 @@ node {
   
   stage('SonarQube Analysis') {
     def msbuildHome = tool 'msbuild'
-    def scannerHome = tool 'SonarScanner'
+    def scannerHome = tool 'sonarscanner'
     withSonarQubeEnv() {
       bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" begin /k:\"myndsonar\""
       bat "\"${msbuildHome}\" /property:Configuration=Release Myend_sampleApp\\WebApplication1\\WebApplication1.sln /t:Rebuild"
