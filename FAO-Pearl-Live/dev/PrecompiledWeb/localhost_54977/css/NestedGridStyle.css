@@ -1,0 +1,114 @@
+﻿/* -----   Detailed panel   ----- */
+.shadowed 
+{
+	-moz-box-shadow: 0px 0px 6px 3px gray;
+    -webkit-box-shadow: 0px 0px 6px 3px gray;
+    box-shadow: 0px 0px 6px 3px gray;
+}
+    
+.expand-panel 
+{
+	margin-left:6px;
+	padding-left:6px;
+	margin-bottom:6px;
+	height: auto;
+}
+
+.error-models {
+	color: Maroon;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.notfound-models {
+	color: #3D3D6D;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+table.childgridview_style .HeaderRowOutOfSight th
+{
+	background:white url(../Images/gradient_background.png) repeat-x !important;
+    color: white !important;
+}
+
+table.childgridview_style .HeaderRowOnSight th
+{
+	background:white url(../Images/grid_header_background.gif) repeat-x;
+    color: black;
+    padding: 5px 10px;
+}
+
+table.childgridview_style {
+/*	display: inline;*/
+	border: solid 1px #FEFEFE !important;
+	background-color: #F7F7FF;
+	border-collapse: collapse;
+	overflow: hidden;
+	font: small/1.5 "Tahoma" , "Bitstream Vera Sans" , Verdana, Helvetica, sans-serif;
+}
+.childgridview_style th
+{
+	/*background: white url(../Images/stripped_background.gif) repeat-x !important;*/
+	/*background: url() !important;*/
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+    color: black !important;
+	text-decoration: none;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	border: solid 1px #DDDDDD;
+	border-collapse: collapse;	
+	padding: 0px 0px 0px 0px;
+}
+        .childgridview_style tbody tr td
+        {
+            padding: 1px 1px; /*Must be set to make sure table-freezing function works just fine*/
+            /*color: #666;*/ /*Do not set default color for a row, otherwise the status-based row color setting in code-behind cannot override it*/
+        }
+
+/*End Added 2009/05/19*/
+/* -----   Error messages   ----- */
+.panelMsgErro {
+	display: block;
+	width: 350px;
+	background-color: #fff;
+	color: #000000;
+	border: solid 1px #D6D6CE;	
+}
+.panelMsgErroTopo {
+	width: 100%;
+	background-color: #DA251E;
+	color: #ffffff;
+	font-weight: bold;
+	border: solid 1px #D6D6CE;
+	padding: 0;
+	margin : 0;
+}
+.panelMsgErroMsg {
+	width: 100%;
+	background-color: #fff;
+	color: #000000;
+	margin: 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.panelMsgErroBotoes {
+	width: 100%;
+	background-color: #F8F8F8;
+	text-align: center;
+	border: solid 1px #CC0033;
+	padding: 0;
+	margin : 0;
+}
+.panelMsgErroBotoes A:link, .panelMsgErroBotoes A:visited, .panelMsgErroBotoes A:hover, .panelMsgErroBotoes A:active, .panelMsgErroBotoes A:focus  {
+	color: #fff;
+	background-color: #DA251E;
+	text-decoration: none;
+	font-weight: bold;
+	border: solid 1px #CC0033;	
+	padding: 2px 2em 2px 2em;
+}
+

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="PearlWS" CodeBehind="~/App_Code/PearlWS.vb" %>

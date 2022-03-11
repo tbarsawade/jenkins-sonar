@@ -1,0 +1,14 @@
+<samlp:AuthnRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
+                    ID="_616c6854-8d96-4ca2-a4f4-3152a45c4e70"
+                    Version="2.0"
+                    IssueInstant="2020-05-14T00:23:22Z"
+		    Destination="https://accounts.google.com/o/saml2/idp?idpid=C00yykks4"
+                    ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                    AssertionConsumerServiceURL="https://Qwikcilver.myndsaas.com/SAMLSSO.aspx"
+                    >
+    <saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">https://Qwikcilver.myndsaas.com</saml:Issuer>
+    <samlp:NameIDPolicy Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"
+                        AllowCreate="true"
+                        />
+</samlp:AuthnRequest>
+

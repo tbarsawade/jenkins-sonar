@@ -1,0 +1,9 @@
+﻿body {
+
+}
+.ajax__tab_default .ajax__tab_tab {
+    overflow: visible !important;
+    text-align: center;
+    display: -moz-inline-box;
+    display: inline-block;
+}

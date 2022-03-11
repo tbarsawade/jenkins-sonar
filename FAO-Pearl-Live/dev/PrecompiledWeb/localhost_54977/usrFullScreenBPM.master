@@ -1,0 +1,164 @@
+﻿<%@ master language="VB" inherits="usrFullScreenBPM, App_Web_tqo4ibz3" %>
+
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1" />
+    <title>Welcome to eDMS Control Panel</title>
+
+    <link href="assets/plugins/glyphicons/fonts/glyphicons-regular.eot" />
+    <link href="App_Themes/M1/bootstrap.min.css" rel="Stylesheet" />
+    <link href="css/style.css" rel="Stylesheet" type="text/css" />
+    <link href="css/ui-lightness/jquery-ui-1.10.2.custom.css" type="text/css" rel="stylesheet" />
+    <script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="scripts/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="scripts/jquery.slidePanel.min.js"></script>
+    <%--<link href="css/bootstrap.min.css" rel="stylesheet" />--%>
+      <style type="text/css">
+        .style1 {
+            width: 100%;
+            height: 100%;
+        }
+         .mg0{
+            margin:0px !important;
+        }
+        /*.mycontent {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 5px #a0a0a0;
+            margin: 115px auto 20px !important;
+            min-height: 430px !important;
+            padding: 15px;
+            width: 100% !important;
+            box-sizing:border-box;
+
+        }*/
+        .top_header1 {
+            display: block;
+            margin: 0 auto;
+            padding: 13px 0;
+            width: 100%;
+        }
+    </style> 
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".Menu").show();
+            $("#menuBar").removeClass("off");
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+
+            //for dropdown menu		
+            $(".dropdown-menu").parent().removeClass().addClass('dropdown');
+            $(".dropdown>a").removeClass().addClass('dropdown-toggle').append('<b class="caret"></b>').attr('data-toggle', 'dropdown');
+
+
+
+        });
+    </script>
+
+    <style type="text/css">
+        .imglogo {
+            padding: 0px 0px 0px 8px;
+            margin: 5px;
+        }
+    </style>
+
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <div class="container-fluid container-fluid-amend">
+        <form id="form1" runat="server">
+            <cc1:ToolkitScriptManager ID="scriptmanager" runat="server"></cc1:ToolkitScriptManager>
+            <%--<asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>--%>
+            <div class="TopMasterHeader">
+                <div class="row">
+                    <div class="container-fluid container-fluid-amend">
+                        <!-- wrap starts here -->
+                        <%--  <div id="header_main">--%>
+                        <span class="titleName">
+                            <asp:Label ID="lblLogo" runat="server" Width="200" Height="55"></asp:Label></span>
+                            
+                       
+                        <div class="pull-right">
+                            <div class="pull-right">
+                                <div class="pull-right" style="margin: 8px;">
+                                    <a href="profile.aspx">
+                                        <img runat="server" src="Images/ChangePassword.png" id="imgChangePwd" alt="Change Pwd" /></a>
+                                    <a href="signout.aspx">
+                                        <img src="Images/logout.png" alt="Sign-out" /></a>
+
+                                </div>
+
+                                <div class="custom-search hidden-xs">
+                                    <div class="btn btn-default login-link">
+                                        <img src="images/M1profile.png" />
+                                        <span>Your Role</span>
+                                        <asp:DropDownList ID="ddlUserRole" runat="server" Width="120px" CssClass="textoxThick form-control form-controlrole" AutoPostBack="True"></asp:DropDownList>
+                                        <%--   <span class="caret arow"></span>--%>
+                                    </div>
+                                </div>
+                                <div class="pull-right">
+                                    <label class="welcome">
+                                        <asp:Label ID="lblUserMsg" runat="server"></asp:Label>
+                                    </label>
+                                </div>                               
+                                <label runat="server" id="lblDownTimeNotice" visible="false"  style="width:680px; font-size: 14px; margin-top:12px;">
+                                    <marquee runat="server" direction="left" id="mardowntime" style="color:darkred;"> </marquee>
+                                </label>
+                                <%--#af7867c2--%>
+                            </div>
+                        </div>
+                        <div style="margin: -2px 11px 3px;" class="main_menu">
+                            <asp:Menu ID="menuBar" runat="server" EnableViewState="false" CssClass="off"
+                                IncludeStyleBlock="false" Orientation="Horizontal"
+                                StaticMenuStyle-CssClass="nav"
+                                StaticSelectedStyle-CssClass="active"
+                                DynamicMenuStyle-CssClass="dropdown-menu">
+                            </asp:Menu>
+                        </div>
+                    </div>
+                    <%--  </div>--%>
+                    <%--  <div class="mycontent">--%>
+                    <!-- content ends here -->
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <%--  </div>--%>
+                    <!-- Content ends here -->
+                    <!-- footer starts here -->
+                    <div id="footer">
+                            <div class="col-md-12" id="footer-content">
+                                <div class="ftr"> Copyright © Mynd Integrated Solutions Pvt. Ltd. All rights reserved.</div>
+                            </div>
+                        </div>
+                    <!-- footer ends here -->
+                </div>
+            </div>
+            <!-- wrap ends here -->
+        </form>
+    </div>
+</body>
+    <%-- RUM integration for Site24X7 --%>
+
+    <script type="text/javascript">
+        (function (w, d, s, r, k, h, m) {
+            if (w.performance && w.performance.timing && w.performance.navigation) {
+                w[r] = w[r] || function () { (w[r].q = w[r].q || []).push(arguments) };
+                h = d.createElement('script'); h.async = true; h.setAttribute('src', s + k);
+                d.getElementsByTagName('head')[0].appendChild(h);
+                (m = window.onerror), (window.onerror = function (b, c, d, f, g) {
+                    m && m(b, c, d, f, g), g || (g = new Error(b)), (w[r].q = w[r].q || []).push(["captureException", g]);
+                })
+            }
+        })(window, document, '//static.site24x7rum.in/beacon/site24x7rum-min.js?appKey=', 's247r', '9d4a271a077fcba57716a6a7d4777583');
+    </script>
+
+     <%-- RUM integration for Site24X7 --%>
+</html>

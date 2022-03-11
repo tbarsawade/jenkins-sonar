@@ -1,0 +1,54 @@
+/*Newly Added by Ajeet Kumar For grid view*/
+.dvGrid {
+    width: 100%;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background: #ffffff;
+    padding:0!important;
+    
+}
+
+    .dvGrid table {
+        width: 100%;
+        
+    }
+    
+
+    .dvGrid table td {
+        border: 1px solid #6da268;
+        border-collapse: collapse;
+    }
+     .dvGrid table th  {
+        border: 1px solid #6da268;
+        border-collapse: collapse;
+        color:#fff;
+    }
+
+
+        .dvGrid table tr:hover {
+            background: #c4ddc0!important;
+            cursor: pointer;
+        }
+
+        .dvGrid table tr td th {
+            text-align: center;
+            padding: 5px 0;
+            font-size: 12px;
+        }
+
+        .dvGrid table th a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 12px;
+        }
+
+        .dvGrid table tr th {
+            background: #306c29;
+            border-bottom: 1px solid #46be38;
+        }
+
+        .dvGrid table .active {
+            background: #f1f0a5;
+            cursor: pointer;
+        }

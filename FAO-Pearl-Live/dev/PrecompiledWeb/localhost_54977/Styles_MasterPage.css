@@ -1,0 +1,14 @@
+﻿
+.Menu{   }
+.Menu ul{      background:#7795BD;}
+.Menu ul li{    background:#7795BD url(images/menu_bg.gif) repeat-x;    text-align:left;    /* set width if needed.*/ min-width:150px;}
+.Menu ul li a{    color: black;    padding: 4px 2px 4px;    padding-left:8px !important;    border:1px solid #648ABD;    border-bottom: 0;}
+.Menu ul li a:hover{    background-image: none;}
+.Menu ul li a:hover{    color: White;}
+.Menu ul li a{    color: Black;}
+
+
+
+
+
+

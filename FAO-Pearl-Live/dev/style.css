@@ -1,0 +1,224 @@
+/*
+Original design: 1024px (v3.0 - Jun 01, 2010) - A free xhtml/css website template by Andreas Viklund.
+For more information, see http://andreasviklund.com/templates/1024px/
+*/
+
+/* General tags */
+body {background:url(images/background.gif) repeat-y top center #fff; color:#404040; font:76% Verdana,Tahoma,Arial,sans-serif; line-height:1.3em; margin:0 auto; padding:0;}
+a {color:#4088b8; font-weight:700; text-decoration:none;}
+a:hover {text-decoration:underline;}
+a img {border:0;}
+p {margin:0 0 18px 10px;}
+ul,ol,dl {font-size:0.9em; margin:2px 0 16px 35px;}
+ul ul,ol ol {margin:4px 0 4px 35px;}
+blockquote {border:1px solid #dadada; font-size:0.9em; margin:20px 10px; padding:8px;}
+blockquote p {margin:0;}
+
+/* Headers */
+h1 {color:#890676; font-size:3.6em; letter-spacing:-3px; margin:0 0 20px 25px;}
+h1 a {color:#4088b8; text-transform:none;}
+h2 {border-bottom:4px solid #dadada; color:#890676; font-size:1.4em; letter-spacing:-1px; margin:0 0 10px; padding:0 2px 2px 5px;}
+h3 {border-bottom:3px solid #dadada; color:#890676; font-size:1.2em; font-weight:700; margin:10px 0 8px; padding:1px 2px 2px 3px;}
+h4 {border-bottom:0px solid #dadada; color:#890676; font-size:1.2em; font-weight:700; margin:0px 0 0px; padding:1px 2px 2px 0px;}
+h5 {border-bottom:0px solid #dadada; color:#890676; font-size:1.0em; font-weight:600; margin:0px 0 0px; padding:1px 2px 2px 0px;}
+
+/* Main wrap */
+#wrap {color:#404040; margin:10px auto; padding:0; width:970px;}
+#header {margin:0;}
+#toplinks {font-size:0.9em; padding:5px 2px 2px 3px; text-align:right;}
+#toplinks a {color:gray;}
+#slogan {color:gray; font-size:1.5em; font-weight:700; letter-spacing:-1px; line-height:1.2em; margin:15px 0 20px 35px;}
+
+/* Footer */
+#footer {border-top:4px solid #dadada; clear:both; color:gray; font-size:0.9em; line-height:1.6em; margin:0 auto; padding:8px 0; text-align:right;}
+#footer p {margin:0; padding:0;}
+#footer a {color:#808080;}
+
+
+/*Navigation*/
+
+.navtop {margin-top:2px;margin-bottom:2px;height:20px; width:100%; 
+background: #034f8a url(images/buttonbg.jpg) repeat-x;
+}
+
+.navtop ul
+{list-style: none;display: inline-block ;margin: 0px; padding: 0px;}
+
+.navtop li
+{list-style: none;display: inline;margin: 0px;margin-left:-0px; padding:0px; }
+
+.navtop li a
+{
+text-decoration: none; 
+text-align: center;
+font-weight: bold;
+padding-top: 2px;
+padding-right:8px;
+padding-left:8px;
+font-size : 11px; 
+display:inline-block ; 
+border-right-width:2px;
+border-right-color : #fff;  
+border-right-style :solid; 
+background: url(images/buttonbg.jpg) repeat-x;  
+color:#fff; 
+height: 16px;
+}
+
+.navtop li a:hover {text-decoration: none; background: url(images/btnhover.jpg) repeat-x;  }
+
+.box {
+width: 100%;
+float: left;
+text-align:center;
+overflow: hidden;
+background: transparent;
+border: 1px solid #F18899;
+margin: 0px;
+padding:0px;
+background: #fff;
+}
+
+.box h3
+{
+margin:0;
+padding: 4px;
+background: #99ccff url(images/buttonbg.jpg) repeat-x;
+text-align:center;
+font-size:11px;
+font-family: Verdana;
+color: #fff;
+}
+
+.newspostbitLeft{
+text-align:left;
+padding:5px 0px 5px 0px;
+margin-bottom:2px;
+background: #FFF;
+border: 1px solid lightsteelblue;
+padding-bottom:2px;
+}
+
+.newspostbit{
+text-align:center;
+padding: 5px 5px 5px 0px;
+margin-bottom:5px;
+background: #f5f5f5;
+border: 1px solid whitesmoke;
+padding-bottom:5px;
+}
+
+.newspostbit a { 
+text-decoration: none; 
+display:table-cell;   
+padding: 2px 5px;
+height: 15px;
+vertical-align:middle;  
+background:  url(images/navbg.gif) repeat-x
+}
+
+.newspostbit a:hover { text-decoration: none; background: #FCB2EC }
+
+.newspostbit h3 {
+margin:0;
+padding: 3px;
+text-align:center;
+font-size:12px;
+color: #034f8a;
+}
+
+
+.navlist
+{
+padding-left: 0;margin-left: 0;padding-top: 1;margin-top: 0;padding-bottom: 1;margin-bottom: 0;border-bottom: 1px solid gray;
+}
+
+.navlist li {list-style: none;margin: 0; height: 16px;border-top: 1px solid gray;}
+.navlist li a { text-decoration: none; display:block; padding: 2px 2px;height: 16px;}
+.navlist li a:hover { text-decoration: none; background: #FCB2EC }
+
+
+/* contact_form */
+.contact_box {width:100%;height:100px;background:url(images/contact_box.jpg) no-repeat center;background-position:	0 0px;margin:0px 0 0 0px}
+.contact_box_text {width:180px;padding:5px 10px 10px 10px;text-align:left }
+
+    
+.ModalWindow
+{
+  border: solid 1px #c0c0c0;
+  background:#f0f0f0;
+  padding: 0px 10px 10px 10px;
+  position:absolute;
+  top:-1000px;
+}
+
+.modalBackground
+{
+  background-color:#A52A2A;
+  filter:alpha(opacity=70);
+  opacity:0.5;
+}
+
+/*
+.Menu{ margin-top:10px; background:#E2E2E2;  }
+
+.Menu ul{position:absolute; background:#E2E2E2; z-index:9999;}
+.Menu ul li{background:#E2E2E2  ; margin-right:2px; text-align:left; border-radius:5px 5px 0 0; }
+.Menu ul li a{ color: #000; font-weight:bold ; padding: 4px 2px 4px;    padding-left:8px !important;    border:1px solid #9d9d9d; border-radius:5px 5px 0 0;    border-bottom: 0;}
+.Menu ul li a:hover{ background: #d8efca; color: #000000; margin-right:0px !important ;  }
+    .Menu ul ul  li { margin-right:0px !important;         
+        
+    }
+*/
+
+.rule tr td { text-align:right; padding-right:10px;
+}
+.rule  tr td input[type=text] { width:200px; height:24px; padding-top:3px; margin-top:10px;
+}
+.rule tr td select { width:200px; height:26px; padding-top:3px; margin-top:10px;
+    }
+
+.rule tr td textarea { height:60px; margin-top:10px; margin-right:5px;
+    }
+
+
+.rule tr td input [type=submit] { float:right; width:100px; height:26px;
+    }
+
+/*---For grofers----*/
+.frm_wrp {
+    margin-bottom: 10px;
+}
+
+.mylbl {
+    color: #565656;
+    display: block;
+    float: left;
+    height: 38px;
+    padding-bottom: 5px;
+    text-align: left;
+   
+}
+
+.myinp {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #e96125;
+    border-radius: 4px;
+    color: #7d7d7d;
+    float: left;
+    font-size: 18px;
+    height: 38px;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+   
+}
+
+.cl {
+    clear: both;
+}
+/*---For grofers----*/
+
+
+
+

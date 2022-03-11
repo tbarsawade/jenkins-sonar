@@ -1,0 +1,59 @@
+
+
+
+<script>
+   try{
+         document.domain="";    
+    } catch(ex){
+
+    }  
+</script>
+
+
+	<html dir='ltr'>
+	<head>
+	<title>Error</title>
+	<meta HTTP-EQUIV="content-type" CONTENT="text/html;charset=UTF-8">
+	<link href="/webdesktop/wdstylesheet?Res=1360_768&mRatio=1.0&hRatio=1.0&wRatio=1.0" rel="stylesheet" type="text/css"/>
+	</head>
+	<body class="EWGeneral1" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" >
+            <table width=100% border="0" cellspacing="0" cellpaddingadding="0" style="margin-top:0px;">
+                <tr > 
+                    <td   width=100% background="/webdesktop/webtop/images/white_u.gif" >
+                        <br>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td align="right"  width="100%"><img src="/webdesktop/webtop/images/logo.jpg" title="OmniFlow Web Client"></td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            
+                            <tr>
+                                <td width="100%"><hr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="90%">
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <p align="center" class="EWLabel3">
+                            <br>&nbsp; <br>
+                            This operation could not be done because of following error at the server end !!!<small><small><br>
+                        </small></small>Please try after some time. If the problem persists, contact your Administrator.&nbsp;&nbsp;</p>
+                        
+                        <p>&nbsp;</p>
+                        
+                        <p class="EWErrorMessage">An invalid request is made.
+                             
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+	</body>
+	</html>
+	
+
+	
+
