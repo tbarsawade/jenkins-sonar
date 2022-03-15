@@ -8,11 +8,12 @@ node {
     def scannerHome = tool 'sonarscanner'
     withSonarQubeEnv() {
       bat ''' 
-      "\"${scannerHome}\\SonarScanner.MSBuild.exe\" begin /k:\"myndsaas\" /v:4.6 /d:sonar.verbose=true"
-      //bat "\"${msbuildHome}\" /property:Configuration=Release Myend_sampleApp\\WebApplication1\\WebApplication1.sln /t:Rebuild"
-      "\"${msbuildHome}\" /property:Configuration=Release FAO-Pearl-Live\\dev\\myndsaas.sln /t:Rebuild"
-      "\"${scannerHome}\\SonarScanner.MSBuild.exe\" end"
+      "${scannerHome}\\SonarScanner.MSBuild.exe\" begin /k:\"myndsaas\" /v:4.6 /d:sonar.verbose=true
+      "${msbuildHome}\" /property:Configuration=Release FAO-Pearl-Live\\dev\\myndsaas.sln /t:Rebuild
+      "${scannerHome}\\SonarScanner.MSBuild.exe\" end
       '''      
+      
+      //bat "\"${msbuildHome}\" /property:Configuration=Release Myend_sampleApp\\WebApplication1\\WebApplication1.sln /t:Rebuild"
       
       //bat '''
       //"C:\\ProgramData\\Jenkins\\.jenkins\\tools\\hudson.plugins.sonar.MsBuildSQRunnerInstallation\\SonarScanner\\SonarScanner.MSBuild.exe\" begin /k:\"myndsaas\" /v:4.6 /d:sonar.verbose=true
