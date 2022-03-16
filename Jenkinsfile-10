@@ -12,9 +12,9 @@ node {
       //bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" end"
       
       bat '''
-      "\"${scannerHome}\\SonarScanner.MSBuild.exe\" begin /k:\"myndsaas\" /d:sonar.host.url=\"http://localhost:9000\""
-      "\"${msbuildHome}\" /property:Configuration=Release FAO-Pearl-Live\\dev\\myndsaas.sln /t:Rebuild"
-      "\"${scannerHome}\\SonarScanner.MSBuild.exe\" end"
+      "${scannerHome}\\SonarScanner.MSBuild.exe\" begin /k:\"myndsaas\" /d:sonar.host.url=\"http://localhost:9000\"
+      "${msbuildHome}\" /property:Configuration=Release FAO-Pearl-Live\\dev\\myndsaas.sln /t:Rebuild
+      "${scannerHome}\\SonarScanner.MSBuild.exe\" end
       '''
     }
   }
