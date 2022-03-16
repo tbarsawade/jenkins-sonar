@@ -1,0 +1,15 @@
+node {
+  stage('SCM') {
+    checkout scm
+  }
+  
+  stage('SonarQube Analysis') {
+    def msbuildHome = tool 'msbuild'
+    def scannerHome = tool 'sonarscanner'
+    withSonarQubeEnv() {
+      bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" begin /k:\"myndsaas\""
+      bat "\"${msbuildHome}\" /property:Configuration=Release Myend_sampleApp\\WebApplication1\\WebApplication1.sln /t:Rebuild"
+      bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" end"
+    }
+  }
+}
