@@ -1,0 +1,13 @@
+<samlp:AuthnRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
+                    ID="_bc5b3030-24e0-4847-9188-5c62597559f4"
+                    Version="2.0"
+                    IssueInstant="2020-12-08T13:15:00Z"
+                    Destination="https://noon.onelogin.com/trust/saml2/http-redirect/sso/2ecea2b3-6f3f-4c10-b953-b9c285661619"
+                    ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                    AssertionConsumerServiceURL="https://noon.myndsaas.com/SAMLSSO.aspx"
+                    >
+    <saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">https://noon.myndsaas.com</saml:Issuer>
+    <samlp:NameIDPolicy Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"
+                        AllowCreate="true"
+                        />
+</samlp:AuthnRequest>

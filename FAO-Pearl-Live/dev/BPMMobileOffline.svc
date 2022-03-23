@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="BPMMobileOffline" CodeBehind="~/App_Code/BPMMobileOffline.vb" %>

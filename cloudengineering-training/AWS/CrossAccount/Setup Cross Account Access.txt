@@ -1,0 +1,32 @@
+1. You need TWO AWS accounts for this exercise. Say Account A and Account B.
+   You must have account ids for both accounts.
+2. Create IAM Role in A with name "Role_for_B" for giving access to users in Account B.
+3. Attach EC2ReadPermissions to this role in Account A
+4. In Account B, create an IAM user or use existing IAM user
+5. Attach AssumeRole policy.
+6. Login to console for Account B and Switch Role to Role_A_for_B
+7. Validate that you can see EC2 instances in Account A
+8. Account "B" should access account "A" data.
+
+We need to create inline policy in Account B
+{
+  "Version": "2012-10-17",
+  "Statement": {
+    "Effect": "Allow",
+    "Action": "sts:AssumeRole",
+    "Resource": "arn:aws:iam::349341122682:role/Role_for_B" [This is nothing but role ARN which we copied from Account A]
+  }
+}
+
+what this policy does is "it allows the users in account B to assume the role in account A "
+When you do a switch role you leave apart your existing permissions for existing account and, 
+you just only operate a new account with the new permissions which are attached.
+
+
+
+Result:-
+
+
+As per role we have only provided the EC2 and S3 read access to the account
+that means the account only have read access to EC2 as well as S3.
+Apart from this all the access has been denied to this user.

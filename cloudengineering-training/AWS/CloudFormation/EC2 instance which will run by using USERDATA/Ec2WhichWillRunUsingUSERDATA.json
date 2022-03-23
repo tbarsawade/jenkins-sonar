@@ -1,0 +1,107 @@
+{
+	"AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "This will create ec2 instance which will run by using USRDATA",
+	"Parameters": {
+		"InstanceType": {
+			"Description": "EC2 instance type",
+			"Type": "String",
+			"Default": "t2.micro"
+		},
+		"AMIID": {
+			"Type": "String",
+			"Description": "Select the AMI ID",
+			"Default": "ami-0f19d220602031aed"
+		},
+		"KeyName": {
+			"Type": "String",
+			"Description": "Name of an existing EC2 KeyPair.",
+			"Default": "tejas-key-pair"
+		},
+        "VpcId": {
+			"Type": "String",
+			"Description": "Using Exisiting Security Group",
+			"Default": "vpc-0edacfcb685898a0c"
+		},
+		"SubnetId": {
+			"Type": "String",
+			"Description": "Using Exisiting Public Subnet",
+			"Default": "subnet-089a3510e8eca6ec0"
+		}
+	},
+	"Resources": {
+        "TikuEc2": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "ImageId": {
+                    "Ref": "AMIID"
+                },
+                "InstanceType": {
+                    "Ref": "InstanceType"
+                },
+                "KeyName": {
+                    "Ref": "KeyName"
+                },
+                "NetworkInterfaces": [
+                    {
+                        "DeviceIndex": 0,
+                        "AssociatePublicIpAddress": true,
+                        "DeleteOnTermination": true,
+                        "SubnetId": {
+                            "Ref": "SubnetId"
+                        }
+                        
+                    }
+                ],
+                "UserData": {
+                    "Fn::Base64": {
+                        "Fn::Join": [
+                            "  ",
+                            [
+                                "#!/bin/bash\n",
+                                "sudo su\n",
+                                "yum update -y",
+                                "amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2\n",
+                                "yum install -y httpd\n",
+                                "systemctl start httpd.service\n",
+                                "systemctl enable httpd.service\n",
+                                "echo 'Hello this instance has been created using CF and USERDATA' > /var/www/html/index.html\n"
+                            ]
+                        ]
+                    }
+                }
+            }
+        },
+        "SecurityGroupPublic": {
+            "Type": "AWS::EC2::SecurityGroup",
+            "Properties": {
+                "VpcId": {
+                    "Ref": "VpcId"
+                },
+                "GroupDescription": "SG to allow SSH and HTTP",
+                "GroupName": "DemoSecurityGroup",
+                "SecurityGroupIngress": [
+                    {
+                        "IpProtocol": "tcp",
+                        "FromPort": "22",
+                        "ToPort": "22",
+                        "CidrIp": "0.0.0.0/0",
+                        "Description": "SSH Traffic"
+                    },
+                    {
+                        "IpProtocol": "tcp",
+                        "FromPort": 80,
+                        "ToPort": 80,
+                        "CidrIp": "0.0.0.0/0",
+                        "Description": "HTTP Traffic"
+                    }
+                ],
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "Apache-SG"
+                    }
+                ]
+            }
+        }
+	}	
+}

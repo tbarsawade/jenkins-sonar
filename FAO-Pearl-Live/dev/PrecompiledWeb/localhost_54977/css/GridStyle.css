@@ -1,0 +1,47 @@
+﻿        .gridview_style, .gridview_style td
+        {
+            border: 1px solid #CCC;
+            border-collapse: collapse;
+            font: small/1.5 "Tahoma" , "Bitstream Vera Sans" , Verdana, Helvetica, sans-serif;
+        }
+        .gridview_style
+        {
+            border: 1px solid #CCC;
+            margin: 10px 0 10px 0px;
+        }
+        .gridview_style .altrow
+        {
+            background-color: #EBF4FA;
+        }
+        .gridview_style .row
+        {
+            background-color: #FFF;
+        }
+        .gridview_style thead th, .gridview_style tbody th
+        {
+            background: #999 url(../Images/grid_header_background.gif) repeat-x;
+            color: #333;
+            padding: 5px 10px;
+            border-left: 1px solid #CCC;
+        }
+        .gridview_style tbody tr th {
+            background: url("../Images/grid_header_background.gif") repeat-x scroll 0 0 #FAFAFB;
+            border: 1px solid #AAA;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+        }
+        .gridview_style tbody tr td
+        {
+            padding: 5px 10px;
+            border: 1px solid #AAA;
+            /*color: #666;*/ /*Do not set default color for a row, otherwise the status-based row color setting in code-behind cannot override it*/
+        }
+        .gridview_style tbody tr:hover
+        {
+            background: #FAEBD7 url(Images/grid_header_background.gif) repeat;
+        }
+        .gridview_style tbody tr:hover td
+        {
+            color: #454545;
+        }

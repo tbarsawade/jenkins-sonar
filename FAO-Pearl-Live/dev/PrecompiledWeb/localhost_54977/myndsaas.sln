@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "dev", ".", "{CF981806-FE2A-46A0-92FA-C1BCEC3D2CA8}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54977"
+		Debug.AspNetCompiler.PhysicalPath = "..\dev\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54977\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54977"
+		Release.AspNetCompiler.PhysicalPath = "..\dev\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54977\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56765"
+		SlnRelativePath = "..\dev\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|test = Debug|test
+		release|Any CPU = release|Any CPU
+		release|test = release|test
+		test|Any CPU = test|Any CPU
+		test|test = test|test
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF981806-FE2A-46A0-92FA-C1BCEC3D2CA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF981806-FE2A-46A0-92FA-C1BCEC3D2CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF981806-FE2A-46A0-92FA-C1BCEC3D2CA8}.Debug|test.ActiveCfg = Debug|Any CPU
+		{CF981806-FE2A-46A0-92FA-C1BCEC3D2CA8}.Debug|test.Build.0 = Debug|Any CPU
+		{CF981806-FE2A-46A0-92FA-C1BCEC3D2CA8}.release|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF981806-FE2A-46A0-92FA-C1BCEC3D2CA8}.release|Any CPU.Build.0 = Debug|Any CPU
+		{CF981806-FE2A-46A0-92FA-C1BCEC3D2CA8}.release|test.ActiveCfg = Debug|Any CPU
+		{CF981806-FE2A-46A0-92FA-C1BCEC3D2CA8}.release|test.Build.0 = Debug|Any CPU
+		{CF981806-FE2A-46A0-92FA-C1BCEC3D2CA8}.test|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF981806-FE2A-46A0-92FA-C1BCEC3D2CA8}.test|Any CPU.Build.0 = Debug|Any CPU
+		{CF981806-FE2A-46A0-92FA-C1BCEC3D2CA8}.test|test.ActiveCfg = Debug|Any CPU
+		{CF981806-FE2A-46A0-92FA-C1BCEC3D2CA8}.test|test.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB6D4BAB-DFFC-4275-A310-02E9BF97B3F4}
+	EndGlobalSection
+EndGlobal

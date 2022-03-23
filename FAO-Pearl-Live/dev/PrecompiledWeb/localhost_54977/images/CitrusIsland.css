@@ -1,0 +1,435 @@
+/* top elements */
+* { margin:0; padding: 0; outline: 0; }
+
+
+body {	margin: 0; padding: 0;	font: 11px/1.6em  Verdana, Tahoma, Arial,sans-serif;	color: #555;	background: #FAFAFA; text-align: center; }
+
+/* links */
+a:link, a:visited {	background-color: inherit;	text-decoration:none;		font-weight : bold ; }
+a:hover {	color: #575757;	background-color: inherit;}
+
+.leftmenu {    border:1px solid lime;    width:100%;}
+
+.leftmenu a:link, a:visited {	background-color: inherit;	text-decoration: none;	font-weight : normal; }
+
+/* headers */
+h1, h2, h3{font-family: 'Trebuchet MS', Tahoma, Verdana, Sans-serif;font-weight: Bold; 		}
+
+h1 {font-size: 20px;padding: 0px 0px 10px 10px;	color: #75A54B;	background-color: inherit;}
+
+h2 {font-size: 14px;text-transform: uppercase;	padding:2px;margin:0px;	border-bottom:3px double lime; 	text-align : center; }
+
+h3 {font-size: 15px; padding: 0px 0px 0px 10px;}
+
+
+/* images */
+
+.img {
+	background: #FAFAFA;
+    border: 1px solid #DCDCDC;
+	padding: 8px;
+}
+
+
+.img.float-right {
+  margin: 5px 0px 5px 10px;  
+}
+.img.float-left {
+  margin: 5px 10px 5px 0px;
+}
+
+#sidebar h1, 
+#sidebar p {
+	padding-left: 0;
+}
+
+ul, ol {
+	margin: 10px 20px;
+	padding: 0 20px;
+}
+
+
+code {
+  margin: 5px 0;
+  padding: 15px;
+  text-align: left;
+  display: block;
+  overflow: auto;  
+  font: 500 1em/1.5em 'Lucida Console', 'courier new', monospace;
+  /* white-space: pre; */
+  background: #FAFAFA;
+  border: 1px solid #f2f2f2;  
+  border-left: 4px solid #FF9966;
+}
+
+acronym {
+  cursor: help;
+  border-bottom: 1px solid #777;
+}
+
+blockquote {
+	margin: 5px;
+ 	padding: 10px 15px 10px 32px;
+  	background: url(quote.gif) no-repeat 5px 5px !important;
+	background-position: 10px 10px;
+	border-left: 0px solid #FF9966;
+    font-weight: bold; 
+}
+
+/* form elements */
+
+.search {
+	margin:0px;
+    padding:4px;
+	border: 0px solid #f2f2f2; 
+	background-color: #FAFAFA; 
+}
+
+.formSer {
+	margin:0px;
+    padding: 10px;
+	border: 1px solid #f2f2f2; 
+	background-color: #FAFAFA; 
+}
+
+.form {
+	margin:10px;
+    padding: 10px;
+	border: 1px solid #f2f2f2; 
+	background-color: #FAFAFA; 
+}
+
+
+label {
+	font-weight:bold;
+
+}
+
+
+
+textarea {
+	width:350px;
+	padding:4px 5px;
+	font: normal 1em Verdana, sans-serif;
+	border:1px solid #eee;
+	height:100px;
+	display:block;
+	color:#777;
+}
+
+
+
+/* search form */
+.form.search {
+	position: absolute;
+	top: 15px; right: 5px;
+	padding: 0; margin: 0;
+	border: none;
+	background-color: transparent; 
+}
+
+.form h2
+{
+
+font-family: Tahoma, Verdana, Sans-serif;
+font-weight: Bold; 
+font-size: 14px;
+padding: 0px 0px 0px 0px;	
+color: #75A54B;
+text-align:left;
+text-transform:none;
+border : none;   	
+}
+
+.Searchbtn { 
+	margin: 0px; 
+	font: bolder 12px Verdana, Sans-serif; 
+	border: 1px solid #CCC; 
+	padding: 4px 5px;
+	background: #FFF;
+	color: #75A54B;
+	height:28px; 
+}
+
+.Searchtxt
+{ 
+	margin: 0; 
+	width: 120px;
+	border: 1px solid #CCC; 
+	background: #FFF;
+	color: #333; 	
+	vertical-align: top;
+}
+
+.txtBox
+{
+  font-family: Arial, Sans-Serif;
+    font-size: 13px;
+    margin-bottom: 0px;
+    padding: 3px;
+    border: solid 1px #85b1de;
+    background-color: #EDF2F7;
+}
+
+.textboxThick { 
+	margin: 0; 
+	border: 3px solid #CCC; 
+	background: #FFF;
+	color: #333; 	
+	vertical-align: top;
+}
+
+
+/* -------------------------------------
+   LAYOUT
+---------------------------------------- */
+#wrap {
+	margin: 0 auto; 
+	padding: 10px; 
+	width: 1000px;
+	text-align: left;
+	background-color : #fff; 
+}
+
+/* header */
+#header { 
+	position: relative;
+	height: 70px; 
+	margin: 0; padding: 0;
+	color: #808080; 		
+}
+#header h1#logo {
+	position: absolute;	
+	font: bold 3.9em "trebuchet MS", Arial, Tahoma, Sans-Serif;
+	margin: 0; padding:0;
+	color: #75A54B;
+	letter-spacing: -2px;	
+	border: none;	
+	
+	/* change the values of top and Left to adjust the position of the logo*/
+	top: 0; left: 2px;		
+}
+#header h1#logo span { color: #F18359; }
+
+#header h2#slogan { 
+	position: absolute;
+	margin: 0; padding: 0;	
+	font: bold 11px Arial, Tahoma, Sans-Serif;
+	text-transform: none;
+	
+	/* change the values of top and Left to adjust the position of the slogan*/
+	top: 43px; left: 45px;
+}
+
+/* menu */
+#menu {
+	clear: both;
+	background: #FF9966 url(menubg.gif) repeat-x;
+	height: 30px;
+	margin: 0;
+	font: bolder 1.2em/30px Tahoma, Verdana, Arial, Sans-Serif;		
+}
+#menu ul{
+	margin: 0; padding: 0 0 0 8px;
+}
+#menu ul li {
+	float: left;
+	list-style: none;		
+	border-right: 1px solid #FFA500;
+}
+#menu ul li a {
+	display: block;
+	text-decoration: none;	
+	padding: 0 15px;
+	color: #FFF;	
+}
+#menu ul li a:hover {
+  	color: #333;	
+	background: url(menu-hover-bg.gif) repeat-x;
+}
+#menu ul li#current a {
+	color: #333;
+	background: url(menu-current-bg.gif) repeat-x;	
+}
+
+/* sidebar */
+#sidebar {
+	float: left;
+    padding: 0;
+	display: inline;
+	width: 100%;	
+
+}
+
+#sidebar ul.sidemenu {
+	list-style: none;
+	text-align: left;
+	margin: 0 0 7px 0; padding: 0;
+	text-decoration: none;	
+}
+#sidebar ul.sidemenu li {
+	border-bottom: 1px solid #EFF0F1;	
+	background: url(arrow.gif) no-repeat 3px 8px;
+	padding: 3px 5px 3px 20px;
+}
+
+* html body #sidebar ul.sidemenu li { height: 1%; }
+
+#sidebar ul.sidemenu li a {
+	font-weight: bolder;
+	background-image: none;
+	text-decoration: none;	
+}
+
+#rightbar {
+	float: right;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;	
+}
+
+/* main column */
+#main {
+	margin:0px;
+	padding: 0;
+	width: 100%;	
+}
+
+.post-footer {
+	background-color: #FAFAFA;
+	padding: 5px; margin: 15px 10px 10px 10px;
+	border: 1px solid #f2f2f2; 
+	font-size: 95%;
+}
+
+.post-footer .date {
+	background: url(clock.gif) no-repeat left center;
+	padding-left: 20px; margin: 0 10px 0 5px;
+}
+.post-footer .comments {
+	background: url(comment.gif) no-repeat left center;
+	padding-left: 20px; margin: 0 10px 0 5px;
+}
+.post-footer .readmore {
+	background: url(page.gif) no-repeat left center;
+	padding-left: 20px; margin: 0 10px 0 5px;
+}
+
+/* footer */
+#footer { 
+	clear: both; 	
+	color: #666666; 	
+	background: #FFF url(footerbg.gif) repeat-x;
+	height: 220px;
+}
+
+#footer a 
+{
+    color: #F9864D; 
+	text-decoration: none; 
+	font-weight: normal;
+}
+#footer-content {
+	margin: 0 auto;
+	width: 1020px
+}
+
+#footer-content h2 {
+	font-family: Tahoma, Verdana, Sans-serif;	
+	font-weight: Bold;
+	font-size :11px;
+	border-bottom:1px Solid lime;
+	text-align : left;
+	width:100%;    		
+	text-transform: none ;
+	}
+
+
+#footer-content #footer-left {
+	padding: 10px;
+	width: 60%;
+	float: left;
+	text-align: left;
+}
+#footer-content #footer-right {
+	padding: 10px;
+	width: 35%;
+	float: right;
+	text-align: right;
+}
+
+/* alignment classes */
+.float-left  { float: left; }
+.float-right { float: right; }
+.align-left  { text-align: left; }
+.align-right { text-align: right; }
+
+/* additional classes */
+.clear  { clear: both; }
+.green  { color: #75A54B; }
+
+ 	.waterClassForm
+ 	{
+		       color : InactiveCaption;
+		       font-weight : bold; 
+ 		}
+
+ 	.waterClass
+ 	{
+         font-family: Arial, Sans-Serif;
+         font-size: 13px;
+         margin-bottom: 0px;
+         padding: 3px;
+         border: solid 1px #85b1de;
+         background-color: #fff;
+         color : InactiveCaption;
+		        
+ 	}
+
+
+.btnNew
+{
+text-decoration: none; 
+text-align: center;
+font-weight: bold;
+font-size : 12px; 
+background: url(nav_bg.gif) repeat-x;  
+color:#fff; 
+height: 24px;
+}
+
+
+.btnNew:hover 
+{ 
+	text-decoration: none; 
+	background: url(nav_hover.gif) repeat-x;  
+	}
+
+
+.box {
+width: 100%;
+float: left;
+text-align:center;
+overflow: hidden;
+margin: 0px;
+padding:0px;
+background-color : #fff; 
+}
+
+.box h3
+{
+margin:0;
+padding: 4px;
+background: #99ccff url(nav_bg.gif) repeat-x;
+text-align:center;
+font-size:11px;
+font-family: Verdana;
+color: #fff;
+}
+
+.modalBackground
+{
+  background-color:#CCCCFF;
+  filter:alpha(opacity=40);
+  opacity:0.5;
+}

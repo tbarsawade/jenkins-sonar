@@ -1,0 +1,45 @@
+{
+    "AWSTemplateFormatVersion" : "2010-09-09",
+  
+    "Description" : "This template is used to create userdata.",
+    "Resources" : {
+      "Ec2Instance" : {
+        "Type" : "AWS::EC2::Instance",
+        "Properties" : {
+          "KeyName" : "tejas-key-pair",
+          "ImageId" : "ami-0f19d220602031aed",
+          "InstanceType" : "t2.micro",
+          "VpcId" : "tejasvpc",
+          "SubnetId" : "subnet-0532a15e18d889df2",
+          "UserData" : { "Fn::Base64" : "80" }
+        }
+      }
+    },
+  
+    "Outputs" : {
+      "InstanceId" : {
+        "Description" : "InstanceId of the newly created EC2 instance",
+        "Value" : { "Ref" : "Ec2Instance" }
+      },
+      "AZ" : {
+        "Description" : "Availability Zone of the newly created EC2 instance",
+        "Value" : { "Fn::GetAtt" : [ "Ec2Instance", "AvailabilityZone" ] }
+      },
+      "PublicIP" : {
+        "Description" : "Public IP address of the newly created EC2 instance",
+        "Value" : { "Fn::GetAtt" : [ "Ec2Instance", "PublicIp" ] }
+      },
+      "PrivateIP" : {
+        "Description" : "Private IP address of the newly created EC2 instance",
+        "Value" : { "Fn::GetAtt" : [ "Ec2Instance", "PrivateIp" ] }
+      },
+      "PublicDNS" : {
+        "Description" : "Public DNSName of the newly created EC2 instance",
+        "Value" : { "Fn::GetAtt" : [ "Ec2Instance", "PublicDnsName" ] }
+      },
+      "PrivateDNS" : {
+        "Description" : "Private DNSName of the newly created EC2 instance",
+        "Value" : { "Fn::GetAtt" : [ "Ec2Instance", "PrivateDnsName" ] }
+      }
+    }
+  }

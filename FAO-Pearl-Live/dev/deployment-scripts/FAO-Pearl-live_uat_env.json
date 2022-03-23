@@ -1,0 +1,16 @@
+{
+	"name": "FAO-Pearl_uat",
+	"override_attributes": {
+		"env": "uat",
+		"iis": {
+			"website": {
+				"directory": "D:\\websites",
+				"name": "uat-pilot.myndsolution.com",
+				"bindings": "http/*:80:uat-pilot.myndsolution.com,https/*:443:uat-pilot.myndsolution.com"
+			},
+			"service":{
+				"name": "FAO-Pearl-live"
+			}
+		}
+	}
+}

@@ -1,0 +1,80 @@
+{
+	"AWSTemplateFormatVersion": "2010-09-09",
+	"Parameters": {
+		"InstanceType": {
+			"Description": "EC2 instance type",
+			"Type": "String",
+			"Default": "t2.micro"
+		},
+		"AMIID": {
+			"Type": "String",
+			"Description": "Select the AMI ID",
+			"Default": "ami-0f19d220602031aed"
+		},
+		"KeyName": {
+			"Type": "String",
+			"Description": "Name of an existing EC2 KeyPair.",
+			"Default": "tejas-key-pair"
+		},
+        "VpcId": {
+			"Type": "String",
+			"Description": "Using Exisiting Security Group",
+			"Default": "vpc-0edacfcb685898a0c"
+		},
+		"SubnetId": {
+			"Type": "String",
+			"Description": "Using Exisiting Public Subnet",
+			"Default": "subnet-0532a15e18d889df2"
+		},
+        "ApacheSecurityGroup": {
+            "Type": "String",
+			"Description": "Using Exisiting Security",
+			"Default": "sg-0c50f0fb7e44aaf36"
+        }
+	},
+	"Resources": {
+        "TikuEc2": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "ImageId": {
+                    "Ref": "AMIID"
+                },
+                "InstanceType": {
+                    "Ref": "InstanceType"
+                },
+                "KeyName": {
+                    "Ref": "KeyName"
+                },
+                "SecurityGroups" : {
+                    "Ref": "ApacheSecurityGroup"
+                },
+                "NetworkInterfaces": [
+                    {
+                        "DeviceIndex": 0,
+                        "AssociatePublicIpAddress": true,
+                        "DeleteOnTermination": true,
+                        "SubnetId": {
+                            "Ref": "SubnetId"
+                        }
+                        
+                    }
+                ],
+                "UserData": {
+                    "Fn::Base64": {
+                        "Fn::Join": [
+                            "",
+                            [
+                                "#!/bin/bash",
+                                "yum update -y",
+                                "yum install -y httpd",
+                                "systemctl start httpd.service",
+                                "systemctl enable httpd.service",
+                                "echo 'Hello this instance has been created using CF and USERDATA' > /var/www/html/index.html"
+                            ]
+                        ]
+                    }
+                }
+            }
+        }
+        }
+}

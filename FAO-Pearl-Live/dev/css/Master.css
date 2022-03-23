@@ -1,0 +1,36 @@
+﻿.popup-demo {border: 1px solid #a2a2a2;width:100%;}
+.contact { float: left;margin-bottom: 20px; margin-top: 10px;min-height: 310px;padding: 10px 15px 0px; width: 960px;}
+.main { float: left; margin-top: 10px;min-height: 100%;padding: 10px 15px 0px; width: 450px;}
+.cf_box { width: 100%;}
+.cf_box .allcredits {color: #949494;float: left;font-size: 13px;margin: 0 1.5%;overflow: hidden;padding: 8px 0;width: 47%;}
+.cf_box .cred{width:100%;}
+.fm-con{width:auto;display: block;height: 25px; padding: 6px 12px;font-size: 14px; line-height: 1.42857143; color: #555; background-color: #fff;background-image: none;
+border: 1px solid #ccc;border-radius: 4px;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075); -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;}
+.cf_box .allcredits label { margin-bottom: 6px; width: 160px; float: left; margin-top: 12px; text-align:left; font-size:13px;font-family:Arial;}
+.cf_box .allcredits input {float:left;height:38px;}
+.cf_box .allcredits textarea {border: 1px solid #b4b4b4; border-radius: 6px; box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.15) inset; color: #949494;font-size: 13px;margin-bottom: 0;
+  margin-right: 10px;overflow: hidden;padding: 6px;width: 700px;min-height:100px;}
+.allcredits span{color:#FF0000;}
+.cf_box .allcredits select{display: block;width: 61%; padding: 10px 11px;font-size: 13px;color: #949494; background-color: #fff;background-image: none;border: 1px solid #ccc;border-radius: 4px; height: 38px;}
+.cf_box .allcredits.full {color: #949494;float: left;font-size: 13px;margin: 0 1.5%;overflow: hidden;padding: 15px 0;width: 100%;}	
+.book_btn { background: linear-gradient(to bottom, #45464a 0%, #292A2E 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); border: 1px solid #292A2E; border-radius: 3px; color: #fff; display: block; margin: 10px 0 0;padding: 8px 18px;}
+.clear{clear:both;}
+.contact-rgt .enquiry input.form-control {border-radius: 0; margin-bottom: 15px;}
+.form-control{display: block;width: 61%; height: 25px; padding: 6px 12px;font-size: 14px; line-height: 1.42857143; color: #555; background-color: #fff;background-image: none;
+border: 1px solid #ccc;border-radius: 4px;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075); -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;}
+.btnsave { background: #E96125; border-radius: 3px; color: #fff!important;font-size: 12px; font-weight: bold; padding: 10px;  text-decoration: none; width:100px; border:1px solid #e96125;}
+
+.fieldlist input[type="checkbox"] {width:20px; height:20px; margin:0px 0px;}
+.fieldlist label {
+    width: 200px;
+    margin: 4px 5px;
+    padding: 0px;
+}
+.fieldlist span {
+    width: 238px;
+    color: #000;
+    margin: 0px;
+    display: block;
+    /* float: none; */
+    padding: 0px;
+}
