@@ -92,14 +92,4 @@ pipeline {
         }
         }
         }
-        stage('Scan') {
-          steps {
-             withSonarQubeEnv(installationName: 'sonar-6') { 
-               bat 'mvn clean package sonar:sonar'
-        }
-      }
-    } 
-
-    }
-}
 
