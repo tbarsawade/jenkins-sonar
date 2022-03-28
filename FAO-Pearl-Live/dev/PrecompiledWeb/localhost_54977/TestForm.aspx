@@ -1,4 +1,4 @@
-﻿<%@ page language="VB" autoeventwireup="false" inherits="TestForm, App_Web_snl2xbnc" viewStateEncryptionMode="Always" %>
+﻿<%@ page language="VB" autoeventwireup="false" inherits="TestForm, App_Web_jrsibs13" viewStateEncryptionMode="Always" %>
 
 <!DOCTYPE html>
 

@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="VB" masterpagefile="~/usrFullScreenBPM.master" autoeventwireup="false" inherits="ReallocationRightsNew, App_Web_gsdfcjye" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="" language="VB" masterpagefile="~/usrFullScreenBPM.master" autoeventwireup="false" inherits="ReallocationRightsNew, App_Web_mgyyj1iz" viewStateEncryptionMode="Always" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'> </script>

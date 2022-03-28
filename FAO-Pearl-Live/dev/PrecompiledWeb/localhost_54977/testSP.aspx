@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="VB" masterpagefile="~/usrFullScreenBPM.master" autoeventwireup="false" inherits="testSP, App_Web_tuuwcp04" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="" language="VB" masterpagefile="~/usrFullScreenBPM.master" autoeventwireup="false" inherits="testSP, App_Web_whgqqjhx" viewStateEncryptionMode="Always" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <asp:Button ID="Button1" runat="server"  Visible="false" Text="Button" />

@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="VB" masterpagefile="~/usrFullScreen.master" autoeventwireup="false" inherits="NewMaster, App_Web_dqvq3srr" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="" language="VB" masterpagefile="~/usrFullScreen.master" autoeventwireup="false" inherits="NewMaster, App_Web_0gl03q5k" viewStateEncryptionMode="Always" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <link rel="stylesheet" href="kendu/homekendo.common.min.css" />

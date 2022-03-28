@@ -1,4 +1,4 @@
-﻿<%@ page language="VB" autoeventwireup="false" inherits="VLCCOutWard, App_Web_apcyhbvt" viewStateEncryptionMode="Always" %>
+﻿<%@ page language="VB" autoeventwireup="false" inherits="VLCCOutWard, App_Web_nfrpb0kv" viewStateEncryptionMode="Always" %>
 
 <!DOCTYPE html>
 

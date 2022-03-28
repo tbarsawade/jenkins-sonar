@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="VB" autoeventwireup="false" masterpagefile="~/usrFullScreenBPM.master" inherits="MISDashboardNew, App_Web_bv10wntb" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="" language="VB" autoeventwireup="false" masterpagefile="~/usrFullScreenBPM.master" inherits="MISDashboardNew, App_Web_whgqqjhx" viewStateEncryptionMode="Always" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">

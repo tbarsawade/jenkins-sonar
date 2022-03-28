@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="VB" masterpagefile="~/usrFullScreenBPM.master" autoeventwireup="false" inherits="FtpFileTransferSetting, App_Web_tuuwcp04" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="" language="VB" masterpagefile="~/usrFullScreenBPM.master" autoeventwireup="false" inherits="FtpFileTransferSetting, App_Web_0xvfyc51" viewStateEncryptionMode="Always" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 

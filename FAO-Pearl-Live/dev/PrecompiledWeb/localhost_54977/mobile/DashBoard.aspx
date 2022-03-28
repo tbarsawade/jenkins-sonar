@@ -1,4 +1,4 @@
-﻿<%@ page language="VB" autoeventwireup="false" inherits="mobile_DashBoard, App_Web_tzfea0e5" viewStateEncryptionMode="Always" %>
+﻿<%@ page language="VB" autoeventwireup="false" inherits="mobile_DashBoard, App_Web_towehstj" viewStateEncryptionMode="Always" %>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">

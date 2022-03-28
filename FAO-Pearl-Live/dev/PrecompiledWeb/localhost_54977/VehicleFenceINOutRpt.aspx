@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="VehicleFenceINOutRpt, App_Web_4pl2ohtp" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="VehicleFenceINOutRpt, App_Web_20pgc3v0" viewStateEncryptionMode="Always" %>
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
       <link href="kendu/styles/kendo.common.min.css" rel="stylesheet" />

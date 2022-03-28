@@ -1,4 +1,4 @@
-﻿<%@ page language="VB" autoeventwireup="false" inherits="TestReminder, App_Web_apcyhbvt" viewStateEncryptionMode="Always" %>
+﻿<%@ page language="VB" autoeventwireup="false" inherits="TestReminder, App_Web_pnyzbdje" viewStateEncryptionMode="Always" %>
 
 <!DOCTYPE html>
 

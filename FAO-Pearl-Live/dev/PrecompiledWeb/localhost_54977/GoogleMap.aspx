@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="GoogleMap, App_Web_zdxdm40d" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="GoogleMap, App_Web_i1f1fglq" viewStateEncryptionMode="Always" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 <table cellspacing="2px" cellpadding="2px" width="100%">

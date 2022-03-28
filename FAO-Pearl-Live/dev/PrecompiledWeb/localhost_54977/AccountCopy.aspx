@@ -1,4 +1,4 @@
-﻿<%@ page title="AccountCopy" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="NewAccount, App_Web_13sbvfgr" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="AccountCopy" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="NewAccount, App_Web_0gl03q5k" viewStateEncryptionMode="Always" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">

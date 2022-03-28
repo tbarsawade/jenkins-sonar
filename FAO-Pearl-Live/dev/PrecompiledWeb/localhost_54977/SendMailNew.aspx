@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="VB" masterpagefile="~/usrFullScreenBPM.master" enableeventvalidation="false" validaterequest="false" autoeventwireup="false" debug="True" inherits="SendMailNew, App_Web_dqvq3srr" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="" language="VB" masterpagefile="~/usrFullScreenBPM.master" enableeventvalidation="false" validaterequest="false" autoeventwireup="false" debug="True" inherits="SendMailNew, App_Web_o3dtvhns" viewStateEncryptionMode="Always" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <%--  <script src="js/gridviewScroll.min.js"></script>--%>

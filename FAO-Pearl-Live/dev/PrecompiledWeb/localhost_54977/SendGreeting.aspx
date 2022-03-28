@@ -1,4 +1,4 @@
-﻿<%@ page language="VB" autoeventwireup="false" inherits="SendGreeting, App_Web_tj04ay21" viewStateEncryptionMode="Always" %>
+﻿<%@ page language="VB" autoeventwireup="false" inherits="SendGreeting, App_Web_pnyzbdje" viewStateEncryptionMode="Always" %>
 
 <!DOCTYPE html>
 

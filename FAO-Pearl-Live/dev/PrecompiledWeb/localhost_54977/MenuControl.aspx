@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="MenuControl, App_Web_sfds111l" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="MenuControl, App_Web_iqn0gzeb" viewStateEncryptionMode="Always" %>
 
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
 

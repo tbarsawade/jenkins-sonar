@@ -1,4 +1,4 @@
-﻿<%@ page title="User Action Log Report" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="UserLog, App_Web_ju5zdh34" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="User Action Log Report" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="UserLog, App_Web_m0o4zmkn" viewStateEncryptionMode="Always" %>
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">

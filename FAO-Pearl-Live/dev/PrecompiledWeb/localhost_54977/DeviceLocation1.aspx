@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="DeviceLocation, App_Web_erizob0y" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="DeviceLocation, App_Web_sifhu5tb" viewStateEncryptionMode="Always" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 

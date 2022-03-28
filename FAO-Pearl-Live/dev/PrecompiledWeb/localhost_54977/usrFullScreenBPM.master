@@ -1,4 +1,4 @@
-﻿<%@ master language="VB" inherits="usrFullScreenBPM, App_Web_tqo4ibz3" %>
+﻿<%@ master language="VB" inherits="usrFullScreenBPM, App_Web_jrsibs13" %>
 
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>

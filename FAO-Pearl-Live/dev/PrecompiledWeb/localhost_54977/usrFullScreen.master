@@ -1,4 +1,4 @@
-﻿<%@ master language="VB" inherits="usrFullScreen, App_Web_snl2xbnc" %>
+﻿<%@ master language="VB" inherits="usrFullScreen, App_Web_yp33scrq" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit.HTMLEditor" TagPrefix="cc1" %>
 

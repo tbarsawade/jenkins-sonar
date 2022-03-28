@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="WSErrLog, App_Web_sfds111l" enableeventvalidation="false" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="WSErrLog, App_Web_wzrtint1" enableeventvalidation="false" viewStateEncryptionMode="Always" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
  

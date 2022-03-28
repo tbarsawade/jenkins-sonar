@@ -1,4 +1,4 @@
-﻿<%@ page title="Congratulations User : Account created successfully" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="Success, App_Web_erizob0y" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="Congratulations User : Account created successfully" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="Success, App_Web_kxub2lm0" viewStateEncryptionMode="Always" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table cellspacing="0px" cellpadding="0px" width="100%" border="0px">

@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="SendMail, App_Web_ik1k4di5" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="SendMail, App_Web_wzrtint1" viewStateEncryptionMode="Always" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
         <table cellpadding="0" cellspacing="0" style="text-align: left" width="100%" border="0">
           <tr style="color: #000000">

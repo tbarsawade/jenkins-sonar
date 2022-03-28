@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="VB" masterpagefile="~/PublicMaster.master" autoeventwireup="false" inherits="TestCluster, App_Web_erizob0y" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="" language="VB" masterpagefile="~/PublicMaster.master" autoeventwireup="false" inherits="TestCluster, App_Web_20pgc3v0" viewStateEncryptionMode="Always" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 

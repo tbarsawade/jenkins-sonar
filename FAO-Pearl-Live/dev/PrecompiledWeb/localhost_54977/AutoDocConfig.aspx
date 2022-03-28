@@ -1,4 +1,4 @@
-﻿<%@ page language="VB" autoeventwireup="false" inherits="AutoDocConfig, App_Web_tuuwcp04" masterpagefile="~/usrFullScreenBPM.master" viewStateEncryptionMode="Always" %>
+﻿<%@ page language="VB" autoeventwireup="false" inherits="AutoDocConfig, App_Web_o3dtvhns" masterpagefile="~/usrFullScreenBPM.master" viewStateEncryptionMode="Always" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 

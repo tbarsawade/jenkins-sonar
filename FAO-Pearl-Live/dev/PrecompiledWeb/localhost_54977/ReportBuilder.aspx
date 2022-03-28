@@ -1,4 +1,4 @@
-﻿<%@ page title="Report Builder" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" enableeventvalidation="false" inherits="ReportBuilder, App_Web_gsdfcjye" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="Report Builder" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" enableeventvalidation="false" inherits="ReportBuilder, App_Web_0xvfyc51" viewStateEncryptionMode="Always" %>
 
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">

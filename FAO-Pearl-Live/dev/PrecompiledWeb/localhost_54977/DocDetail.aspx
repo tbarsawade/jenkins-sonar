@@ -1,4 +1,4 @@
-﻿<%@ page language="VB" autoeventwireup="false" enableeventvalidation="false" inherits="DocDetail, App_Web_tqo4ibz3" viewStateEncryptionMode="Always" %>
+﻿<%@ page language="VB" autoeventwireup="false" enableeventvalidation="false" inherits="DocDetail, App_Web_jrsibs13" viewStateEncryptionMode="Always" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <!DOCTYPE html>

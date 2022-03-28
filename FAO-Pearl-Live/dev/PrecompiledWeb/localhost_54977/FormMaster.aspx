@@ -1,4 +1,4 @@
-﻿<%@ page title="Form Master" language="VB" masterpagefile="~/usrFullScreenBPM.master" enableviewstate="true" autoeventwireup="false" inherits="FormMaster, App_Web_pjyrorn1" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="Form Master" language="VB" masterpagefile="~/usrFullScreenBPM.master" enableviewstate="true" autoeventwireup="false" inherits="FormMaster, App_Web_20pgc3v0" viewStateEncryptionMode="Always" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 

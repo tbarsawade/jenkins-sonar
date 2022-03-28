@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="ftpSetting, App_Web_jkdm3bq3" viewStateEncryptionMode="Always" %>
+﻿<%@ page title="" language="VB" masterpagefile="~/USR.master" autoeventwireup="false" inherits="ftpSetting, App_Web_mgyyj1iz" viewStateEncryptionMode="Always" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table cellspacing="0px" cellpadding="0px" width="100%" border="0px">
     <tr>

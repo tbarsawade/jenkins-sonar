@@ -1,4 +1,4 @@
-﻿<%@ page language="VB" autoeventwireup="false" inherits="ActionMailApproval, App_Web_1rjiof5j" viewStateEncryptionMode="Always" %>
+﻿<%@ page language="VB" autoeventwireup="false" inherits="ActionMailApproval, App_Web_pnyzbdje" viewStateEncryptionMode="Always" %>
 
 <!DOCTYPE html>
 
