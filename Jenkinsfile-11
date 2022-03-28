@@ -7,8 +7,8 @@ node {
     def msbuildHome = tool 'msbuild'
     def scannerHome = tool 'sonarscanner'
     withSonarQubeEnv() {
-      bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" begin /k:\"myndsaas\" /d:sonar.host.url=\"http://localhost:9000\""
-      bat "\"${msbuildHome}\" /property:Configuration=Release FAO-Pearl-Live\\dev\\myndsaas.sln /t:Rebuild"
+      bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" begin /k:\"myndsaas\""
+      bat "\"${msbuildHome}\" FAO-Pearl-Live\\dev\\myndsaas.sln /t:Rebuild"
       bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" end"
       
       //bat ''' 
