@@ -1,0 +1,1 @@
+﻿select  top 10 * from mmm_mst_rules where EID=62;

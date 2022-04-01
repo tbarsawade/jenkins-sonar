@@ -1,0 +1,73 @@
+<style> .textmode { mso-number-format:\@; } </style><table>
+	<tr>
+		<td><div>
+			<table cellspacing="0" rules="all" border="1" style="border-collapse:collapse;">
+				<tr>
+					<th scope="col">DocNumber</th><th scope="col">Delivery Time</th><th scope="col">Delivery Terms</th><th scope="col">Currency</th><th scope="col">Valid From</th><th scope="col">Valid To</th><th scope="col">PO Date</th><th scope="col">Payment Terms</th><th scope="col">Incoterms</th><th scope="col">Warranty</th><th scope="col">Total Amount</th><th scope="col">PR No</th><th scope="col">Vendor Name</th><th scope="col">Sub Department</th><th scope="col">Item Sub Category</th><th scope="col">Bill To Location</th><th scope="col">Expected Delivery date</th><th scope="col">Business Unit</th><th scope="col">PO Items.Tax Code</th><th scope="col">PO Items.Remarks</th><th scope="col">PO Items.Balance Qty</th><th scope="col">PO Items.Item Category</th><th scope="col">PO Items.Quantity</th><th scope="col">PO Items.test</th><th scope="col">PO Items.Rate</th>
+				</tr><tr>
+					<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+				</tr>
+			</table>
+		</div></td>
+	</tr><tr>
+		<td>&nbsp;</td>
+	</tr><tr>
+		<td><div>
+			<table cellspacing="0" rules="all" border="1" style="border-collapse:collapse;">
+				<tr>
+					<th scope="col">DisPlayName</th><th scope="col">Mandatory Fields</th><th scope="col">Data Type</th><th scope="col">Minimum Length</th><th scope="col">Maximum Length</th>
+				</tr><tr>
+					<td>DocNumber</td><td>Yes</td><td>Numeric Digits</td><td>1</td><td>0</td>
+				</tr><tr>
+					<td>Delivery Time</td><td>Yes</td><td>Text</td><td>0</td><td>200</td>
+				</tr><tr>
+					<td>Delivery Terms</td><td>No</td><td>Text</td><td>0</td><td>200</td>
+				</tr><tr>
+					<td>Currency</td><td>Yes</td><td>Text</td><td>0</td><td>0</td>
+				</tr><tr>
+					<td>Valid From</td><td>No</td><td>Date in (DD/MM/YY)</td><td>0</td><td>100</td>
+				</tr><tr>
+					<td>Valid To</td><td>No</td><td>Date in (DD/MM/YY)</td><td>0</td><td>10</td>
+				</tr><tr>
+					<td>PO Date</td><td>Yes</td><td>Date in (DD/MM/YY)</td><td>0</td><td>10</td>
+				</tr><tr>
+					<td>Payment Terms</td><td>Yes</td><td>Text</td><td>0</td><td>100</td>
+				</tr><tr>
+					<td>Incoterms</td><td>No</td><td>Text</td><td>0</td><td>200</td>
+				</tr><tr>
+					<td>Warranty</td><td>No</td><td>Text</td><td>0</td><td>100</td>
+				</tr><tr>
+					<td>Total Amount</td><td>Yes</td><td>Numeric Digits</td><td>0</td><td>0</td>
+				</tr><tr>
+					<td>PR No</td><td>Yes</td><td>Text</td><td>0</td><td>0</td>
+				</tr><tr>
+					<td>Vendor Name</td><td>Yes</td><td>Text</td><td>0</td><td>0</td>
+				</tr><tr>
+					<td>Sub Department</td><td>Yes</td><td>Text</td><td>0</td><td>0</td>
+				</tr><tr>
+					<td>Item Sub Category</td><td>Yes</td><td>Text</td><td>0</td><td>0</td>
+				</tr><tr>
+					<td>Bill To Location</td><td>Yes</td><td>Text</td><td>0</td><td>0</td>
+				</tr><tr>
+					<td>Expected Delivery date</td><td>Yes</td><td>Date in (DD/MM/YY)</td><td>0</td><td>100</td>
+				</tr><tr>
+					<td>Business Unit</td><td>No</td><td>Text</td><td>0</td><td>0</td>
+				</tr><tr>
+					<td>PO Items.Tax Code</td><td>No</td><td>Text</td><td>0</td><td>0</td>
+				</tr><tr>
+					<td>PO Items.Remarks</td><td>No</td><td>Text</td><td>0</td><td>100</td>
+				</tr><tr>
+					<td>PO Items.Balance Qty</td><td>Yes</td><td>Numeric Digits</td><td>0</td><td>100</td>
+				</tr><tr>
+					<td>PO Items.Item Category</td><td>Yes</td><td>Text</td><td>0</td><td>0</td>
+				</tr><tr>
+					<td>PO Items.Quantity</td><td>No</td><td>Numeric Digits</td><td>0</td><td>100</td>
+				</tr><tr>
+					<td>PO Items.test</td><td>No</td><td>Text</td><td>0</td><td>100</td>
+				</tr><tr>
+					<td>PO Items.Rate</td><td>Yes</td><td>Numeric Digits</td><td>0</td><td>10</td>
+				</tr>
+			</table>
+		</div></td>
+	</tr>
+</table>

@@ -1,0 +1,16 @@
+{
+	"name": "FAO-Pearl_uat",
+	"override_attributes": {
+		"env": "uat",
+		"iis": {
+			"website": {
+				"directory": "D:\\websites",
+				"name": "uat.myndsaas.com",
+				"bindings": "http/*:80:uat.myndsaas.com,https/*:443:uat.myndsaas.com"
+			},
+			"service":{
+				"name": "FAO-Pearl-live"
+			}
+		}
+	}
+}

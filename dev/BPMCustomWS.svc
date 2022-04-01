@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="BPMCustomWS" CodeBehind="~/App_Code/BPMCustomWS.vb"  Factory="MyServiceHostFactory" %>

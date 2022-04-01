@@ -1,0 +1,76 @@
+a {
+    outline: 0 !important;
+}
+
+.signout {
+    background: url(../images/signout.png) no-repeat scroll 0 70px / cover;
+    height: 300px;
+}
+
+.session {
+    background: url(../images/sessionout.png) no-repeat scroll 0 70px / cover;
+    height: 300px;
+}
+
+.headbg {
+    background-color: #fff;
+    padding: 8px;
+}
+
+.txt {
+    color: #6a6b6d;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 50px 25px 0px;
+    text-align: left;
+}
+
+    .txt > a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+.login {
+    background-color: #1e77dd;
+    width: 150px;
+    padding: 12px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+    .login:hover {
+        background-color: #398de4;
+        width: 150px;
+        padding: 12px;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+footer {
+    position: relative;
+}
+
+.ftrbg {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    background-color: #fff;
+    padding: 8px;
+    width: 100%;
+}
+
+footer {
+    color: white;
+    font-weight: normal;
+    line-height: 30px;
+    font-size: 12px;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+    z-index: 1;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
