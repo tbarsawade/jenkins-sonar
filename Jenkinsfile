@@ -4,7 +4,7 @@ node {
   }
   
   stage('SonarQube Analysis') {
-    def msbuildHome = tool 'msbuild'
+    def msbuildHome = tool 'tikubuild'
     def scannerHome = tool 'sonarscanner'
     withSonarQubeEnv() {
       bat "\"${scannerHome}\\SonarScanner.MSBuild.exe\" begin /k:\"myndsaas\""
