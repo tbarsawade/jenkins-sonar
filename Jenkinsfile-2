@@ -4,7 +4,7 @@ node {
   }
   
   stage('SonarQube Analysis') {
-    def msbuildHome = tool 'myndbuild'
+    def msbuildHome = tool 'tikubuild'
     def scannerHome = tool 'sonarscanner'
     withSonarQubeEnv() {
       bat ''' 
