@@ -1,0 +1,28 @@
+node {
+  stage('SCM') {
+    checkout scm
+  }
+  
+  stage('SonarQube Analysis') {
+    def msbuildHome = tool 'tikubuild'
+    def scannerHome = tool 'sonarscanner'
+    withSonarQubeEnv() {
+      bat ''' 
+      "C:\\ProgramData\\Jenkins\\.jenkins\\tools\\hudson.plugins.sonar.MsBuildSQRunnerInstallation\\SonarScanner\\SonarScanner.MSBuild.exe\" begin /k:\"myndsaas\"
+      "C:\\Program Files (x86)\\MSBuild\\14.0\\Bin\\MSBuild.exe\" /property:Configuration=Release Myend_sampleApp\\WebApplication1\\WebApplication1.sln /t:Rebuild
+      "C:\\ProgramData\\Jenkins\\.jenkins\\tools\\hudson.plugins.sonar.MsBuildSQRunnerInstallation\\SonarScanner\\SonarScanner.MSBuild.exe\" end
+      '''      
+      
+      //bat "\"${msbuildHome}\" /property:Configuration=Release Myend_sampleApp\\WebApplication1\\WebApplication1.sln FAO-Pearl-Live\\dev\\myndsaas.sln /t:Rebuild"
+      
+      //bat '''
+      //"C:\\ProgramData\\Jenkins\\.jenkins\\tools\\hudson.plugins.sonar.MsBuildSQRunnerInstallation\\SonarScanner\\SonarScanner.MSBuild.exe\" begin /k:\"myndsaas\" /v:4.6 /d:sonar.verbose=true
+      //"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\MSBuild\\Current\\Bin\\MSBuild.exe\" /property:Configuration=Release FAO-Pearl-Live\\dev\\myndsaas.sln /t:Rebuild
+      //"C:\\ProgramData\\Jenkins\\.jenkins\\tools\\hudson.plugins.sonar.MsBuildSQRunnerInstallation\\SonarScanner\\SonarScanner.MSBuild.exe\" end
+     //''' 
+      //"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe\" /property:Configuration=Release dev\\myndsaas.sln /t:Rebuild
+      //bat "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\MSBuild\\Current\\Bin\\MSBuild.exe\" /property:Configuration=Release Myend_sampleApp\\WebApplication1\\WebApplication1.sln /t:Rebuild"
+      //"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe""C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe\" 
+    }
+  }
+}
