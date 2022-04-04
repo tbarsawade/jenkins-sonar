@@ -4,12 +4,12 @@ node {
   }
   
   stage('SonarQube Analysis') {
-    def msbuildHome = tool 'tikubuild'
+    def msbuildHome = tool 'msbuild'
     def scannerHome = tool 'sonarscanner'
     withSonarQubeEnv() {
       bat ''' 
       "C:\\ProgramData\\Jenkins\\.jenkins\\tools\\hudson.plugins.sonar.MsBuildSQRunnerInstallation\\SonarScanner\\SonarScanner.MSBuild.exe\" begin /k:\"myndsaas\"
-      "C:\\Program Files (x86)\\MSBuild\\14.0\\Bin\\MSBuild.exe\" /property:Configuration=Release Myend_sampleApp\\WebApplication1\\WebApplication1.sln /t:Rebuild
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\MSBuild\\15.0\\Bin\\MSBuild.exe\" /property:Configuration=Release Myend_sampleApp\\WebApplication1\\WebApplication1.sln /t:Rebuild
       "C:\\ProgramData\\Jenkins\\.jenkins\\tools\\hudson.plugins.sonar.MsBuildSQRunnerInstallation\\SonarScanner\\SonarScanner.MSBuild.exe\" end
       '''      
       
